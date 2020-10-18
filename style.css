@@ -1,0 +1,187 @@
+/*Reset The margin and padding. */
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Style the container , make it flexible , set the width to 100% and makes it wrapper*/
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* Style header , flexible, set the width , make it auto height and bg color*/
+.head{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+}
+/* Make article not visible for hamburger menu*/
+.article-1{
+    display: none;
+}
+/*Making Hamburger menu on mobile  more readable */
+.head-sign{
+    font-size: 150%;
+}
+/*Making the navigation flexible and set him to a end of a block*/
+.navigation{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+/*Make button smaller and height flexible with auto */
+#button{
+    width: 20%;
+    height: auto;
+}
+/*Styling the place for button that have a .button class */
+a.button{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4%;
+}
+/*behaviour of hiden list when he is visible */
+.article-1{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/* styling the list in article-1*/
+.lista-2{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    list-style: none;
+    font-size: 150%;
+}
+/*Main page of the site*/
+.main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*Flexible photo of iphone 11 */
+.apple-photo{
+    height: auto;
+    width: 100%;
+
+}
+/*Description to  2 of lorem signs */
+.apple-discr{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 5%;
+}
+/*Styling h3 in main */
+.main h3{
+    display: flex;
+    margin: 0 auto;
+}
+/*Styling Aside bottom of the main */
+.corner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+/* Creating lexible apple logo*/
+.logo-apple{
+    width: 20%;
+    height: auto;
+}
+/*Creating Footer and make it flexbile */
+.foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+}
+/*The footer links with fake links */
+.other{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding-top: 3%;
+    list-style-type: circle;
+    color: black;
+    cursor: pointer;
+    padding-bottom: 3%;
+}
+/*Foot sign styling in footer */
+.foot-sign{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+/*Making the list in the footer red when click */
+.other li:hover{
+    color: red;
+}
+/*Media querries for tablet */
+@media only screen and (min-width:768px){
+    #button{
+        width: 10%;
+    }
+    .head-sign{
+        font-size: 180%;
+    }
+    .apple-photo{
+        width: 50%;
+    }
+    .main h3{
+        align-self: center;
+        font-size: 160%;
+    }
+    .apple-discr{
+        font-size: 150%;
+    }
+}
+/*Media for smaller laptops */
+@media only screen and (min-width:1000px){
+    #button{
+        width: 10%;
+        height: 10vh;
+    }
+    .head-sign{
+        font-size: 140%;
+    }
+    .apple-photo{
+        width: 30%;
+    }
+    .main h3{
+        align-self: center;
+        font-size: 110%;
+    }
+    .apple-discr{
+        font-size: 110%;
+    }
+    .logo-apple{
+        width: 10%;
+    }
+
+}
+/*Media for Pc and Tv */
+@media only screen and (min-width:1440px){
+    .head-sign{
+        font-size: 180%;
+    }
+    .main h3{
+        align-self: center;
+        font-size: 170%;
+    }
+    .apple-discr{
+        font-size: 170%;
+    }
+    .other{
+        font-size: 150%;
+    }
+
+}
